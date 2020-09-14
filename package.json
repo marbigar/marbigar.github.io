@@ -5,14 +5,14 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run build && node-sass --watch sass --o css --source-map true",
-    "build": "node-sass sass --o css --source-map true"
+    "start": "npm run build && node-sass-chokidar --watch sass --o css --source-map true",
+    "build": "node-sass-chokidar sass --o css --source-map true"
   },
   "author": "Mariana Kudrych",
   "license": "ISC",
   "dependencies": {
     "jquery": "^3.5.1",
-    "node-sass": "^4.14.1",
+    "node-sass-chokidar": "^1.5.0",
     "normalize.css": "^8.0.1"
   }
 }
