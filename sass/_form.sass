@@ -1,0 +1,71 @@
+@import "mixins"
+
+.form
+  flex: 1
+  flex-shrink: 0
+  padding: 70px 0
+  &__frame
+    border: 2px solid #FAD244
+    box-sizing: border-box
+    border-radius: 10px
+    padding: 30px 30px 10px
+
+    @include xs
+      padding-left: 15px
+      padding-right: 15px
+
+    h2
+      color: #D31900
+      margin-bottom: 0.5em
+    .row
+      display: flex
+      justify-content: space-between
+      margin-top: 32px
+
+      @include xs
+        flex-direction: column
+
+      .col
+        width: 48%
+
+        @include xs
+          width: 100%
+
+  &__bottom
+    display: block
+    width: 50%
+    margin-left: auto
+    margin-top: 40px
+    .btn
+      margin-left: auto
+      margin-right: auto
+
+    @include xs
+      width: 100%
+
+.form-group
+  display: flex
+  flex-direction: column
+  margin-bottom: 30px
+  label
+    color: #1D1B1B
+    opacity: 0.5
+    font-size: 16px
+    line-height: 19px
+  textarea
+    border: 1px solid rgba(29, 27, 27, 0.2)
+    padding: 15px 15px 5px
+    &::placeholder
+      color: #1D1B1B
+      opacity: 0.5
+      font-size: 16px
+      line-height: 19px
+    &:focus
+      outline: none
+
+.form-control
+  border: none
+  border-bottom: 1px solid rgba(29, 27, 27, 0.2)
+  padding: 15px 0 5px
+  &:focus
+    outline: none

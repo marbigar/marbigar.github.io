@@ -1,0 +1,91 @@
+@import "mixins"
+
+.text-image
+  display: flex
+  justify-content: space-between
+  align-items: flex-end
+
+  @include xs-lg
+    align-items: center
+
+  @include xs-sm
+    flex-direction: column
+
+  &.-col-reverse
+    @include xs-sm
+      flex-direction: column-reverse
+
+  &.-flex-center
+    align-items: center
+
+  &__text
+    max-width: 468px
+    padding: 50px 0
+
+    @include lg
+      max-width: 718px
+
+    @include md
+      max-width: 500px
+
+    @include xs-sm
+      max-width: 100%
+      padding-top: 30px
+
+    &.-margin
+      margin-right: 55px
+
+      @include xs-lg
+        margin-right: 0
+
+    p
+      margin: 2em 0
+
+    .btn
+      margin-top: 8px
+
+      @include xs
+        margin-left: auto
+        margin-right: auto
+
+  &__image
+    line-height: 0
+
+    @include xs-lg
+      max-width: 390px
+
+    @include xs-sm
+      margin-top: 50px
+
+
+    &.-margin
+      margin-right: 55px
+
+      @include xs-lg
+        margin-right: 0
+
+    &.-img-girl
+      margin-right: 44px
+      margin-top: 105px
+
+      @include xs-lg
+        margin-right: 0
+
+      @include xs-sm
+        display: none
+
+    &.-img-x3
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      picture
+        @include xl
+          &:nth-child(3)
+            margin-top: -80px
+
+        @include sm-plus
+          &:nth-child(3)
+            margin-top: -20px
+
+        @include xs-lg
+          max-width: 190px

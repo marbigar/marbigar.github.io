@@ -1,0 +1,37 @@
+@import "mixins"
+
+.btn
+  font-size: 18px
+  line-height: 22px
+  text-align: center
+  color: #d31900
+  width: 245px
+  height: 56px
+  cursor: pointer
+  padding: 10px 22px
+  border: none
+  display: block
+
+  @include xs
+    width: 100%
+    font-size: 16px
+    line-height: 20px
+
+  &:focus
+    border: none
+    outline: none
+  &-red
+    background: url("../img/button-red.svg") center no-repeat
+    background-size: 100% 100%
+
+    @include xs
+      background-size: 290px 50px
+    
+  &-orange
+    background: url("../img/button-orange.svg") center no-repeat
+    -webkit-background-size: 100% 100%
+    background-size: 100% 100%
+
+button
+  background: none
+  border: none

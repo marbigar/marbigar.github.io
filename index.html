@@ -7,14 +7,179 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="img/button-hover.svg" as="image">
 </head>
 <body>
-<div class="container">
-    <h1>Hello World!</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam voluptates hic non facere, perferendis, vero
-        reiciendis porro sint illo nobis doloribus deleniti corporis recusandae excepturi numquam tenetur veritatis
-        fugit libero!</p>
-</div>
-<script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="#">
+                <img src="img/logo-name.svg" alt="Всё о Германии">
+            </a>
+        </div>
+        <button class="btn btn-red">Оставить заявку</button>
+    </div>
+</header>
+
+<section class="section">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li><a href="#"><img src="img/icon-home-page.svg" alt="Главная"></a></li>
+            <li class="active">Сотрудничество</li>
+        </ol>
+        <h1>Сотрудничество</h1>
+    </div>
+</section>
+
+<section class="section -grey">
+    <div class="text-image -col-reverse container">
+        <div class="text-image__text">
+            <h2>Баннерная реклама</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus bibendum sed venenatis nibh.
+                Ultrices consectetur viverra sit neque enim mi, diam egestas rhoncus.Sit non egestas vestibulum
+                ultrices dignissim eget. Enim, sed aliquet odio elementum nunc, sem arcu.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus bibendum sed venenatis nibh.
+                Ultrices consectetur viverra sit neque enim mi, diam egestas rhoncus.</p>
+            <button class="btn btn-orange">Оставить заявку</button>
+        </div>
+        <div class="text-image__image -margin">
+            <picture>
+                <source type="image/webp" srcset="img/image-article-1.webp">
+                <img src="img/image-article-1.png" alt="Ноутбук">
+            </picture>
+        </div>
+    </div>
+</section>
+
+<section class="section -red">
+    <div class="text-image container">
+        <div class="text-image__image">
+            <picture>
+                <source type="image/webp" srcset="img/image-article-2.webp">
+                <img src="img/image-article-2.png" alt="Ноутбук">
+            </picture>
+        </div>
+        <div class="text-image__text -margin">
+            <h2>Нативная реклама</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus bibendum sed venenatis nibh.
+                Ultrices consectetur viverra sit neque enim mi, diam egestas rhoncus.Sit non egestas vestibulum
+                ultrices dignissim eget. Enim, sed aliquet odio elementum nunc, sem arcu.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus bibendum sed venenatis nibh.
+                Ultrices consectetur viverra sit neque enim mi, diam egestas rhoncus.</p>
+            <button class="btn btn-orange">Оставить заявку</button>
+        </div>
+    </div>
+</section>
+
+<section class="section -yellow">
+    <div class="text-image -flex-center -col-reverse container">
+        <div class="text-image__text -margin">
+            <h2>Реклама вашего сервиса</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus bibendum sed venenatis nibh.
+                Ultrices consectetur viverra sit neque enim mi, diam egestas rhoncus.Sit non egestas vestibulum
+                ultrices dignissim eget. Enim, sed aliquet odio elementum nunc, sem arcu.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus bibendum sed venenatis nibh.
+                Ultrices consectetur viverra sit neque enim mi, diam egestas rhoncus.</p>
+            <button class="btn btn-orange">Оставить заявку</button>
+        </div>
+        <div class="text-image__image -img-x3">
+            <picture>
+                <source type="image/webp" srcset="img/screen-1.webp">
+                <img src="img/screen-1.png" alt="Скриншот">
+            </picture>
+            <picture>
+                <source type="image/webp" srcset="img/screen-2.webp">
+                <img src="img/screen-2.png" alt="Скриншот">
+            </picture>
+            <picture>
+                <source type="image/webp" srcset="img/screen-3.webp">
+                <img src="img/screen-3.png" alt="Скриншот">
+            </picture>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container flex">
+        <form class="form" action="">
+            <div class="form__frame">
+                <h2>Обратная связь</h2>
+                <p>Оставьте свое сообщение и мы свяжемся с Вами в ближайшее время.</p>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label>Имя, Фамилия</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label>E-mail</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group select">
+                            <label>Тема</label>
+                            <select class="form-control" placeholder="">
+                                <option value="value2">Хочу стать автором</option>
+                                <option value="value3">Значение 2</option>
+                                <option value="value3">Значение 3</option>
+                                <option value="value3">Значение 4</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Ваше сообщение..." name="" id="" rows="4"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form__bottom">
+                <input type="submit" class="btn btn-red" value="Отправить">
+            </div>
+        </form>
+        <div class="text-image__image -img-girl">
+            <picture>
+                <source type="image/webp" srcset="img/image-callback.webp">
+                <img src="img/image-callback.jpg" alt="Девушка">
+            </picture>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <a href="#" class="logo">
+                <img src="img/logo-footer.svg" alt="Всё о Германии">
+            </a>
+            <div class="socials">
+                <a href="#">
+                    <svg class="socials-icon">
+                        <use xlink:href="img/socials-sprite.svg#facebook"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="socials-icon">
+                        <use xlink:href="img/socials-sprite.svg#twitter"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="socials-icon">
+                        <use xlink:href="img/socials-sprite.svg#instagram"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="socials-icon">
+                        <use xlink:href="img/socials-sprite.svg#youtube"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="address">An der Stadtmauer 23, <br>65191 Wiesbaden, Germany</div>
+            <a href="tel:+49(0)6112052100" class="phone">+49 (0) 611 - 205 21 00</a>
+            <a href="mailto:info@worldimmotrade.com" class="email">info@worldimmotrade.com</a>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>

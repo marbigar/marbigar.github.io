@@ -1,0 +1,41 @@
+@import "mixins"
+
+.breadcrumb
+  display: flex
+  flex-direction: row
+  align-items: center
+  list-style: none
+  padding-left: 0
+  margin-top: 84px
+
+  @include sm
+    margin-top: 50px
+
+  @include xs
+    margin-top: 30px
+
+  li
+    font-family: 'Montserrat', sans-serif
+    font-size: 16px
+    margin-right: 20px
+    position: relative
+
+    @include xs-sm
+      font-size: 14px
+
+    &:first-child:before
+      display: none
+    &:before
+      position: absolute
+      content: '\2010'
+      color: #d31900
+      top: 0
+      left: -14px
+    &.active
+      color: #1D1B1B
+
+    a
+      @include xs
+        width: 18px
+        height: 18px
+        display: block
