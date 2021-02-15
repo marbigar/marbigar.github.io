@@ -294,7 +294,7 @@ button {
       @media (min-width: 1500px) {
         .text-image__image.-img-x3 picture:nth-child(3) {
           margin-top: -80px; } }
-      @media (min-width: 768px) {
+      @media (min-width: 768px) and (max-width: 1499px) {
         .text-image__image.-img-x3 picture:nth-child(3) {
           margin-top: -20px; } }
       @media (max-width: 1499px) {
